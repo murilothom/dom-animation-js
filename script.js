@@ -1,24 +1,24 @@
-const tabMenu = document.querySelectorAll(".js-tabmenu li");
-const tabContent = document.querySelectorAll(".js-tabcontent section");
+const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+const tabContent = document.querySelectorAll('[data-tab="content"] section');
 
 // mostrar na tela a descriacao da imagem que esta sendo clicada
 
-const activeTab = (index) => {
-  tabContent.forEach((section) => {
-    section.classList.remove("ativo");
-  });
-  tabContent[index].classList.add("ativo");
-};
-
 tabMenu.forEach((item, index) => {
   item.addEventListener("click", () => {
-    activeTab(index);
+    const activeTab = () => {
+      tabContent.forEach((section) => {
+        section.classList.remove("ativo");
+      });
+      const direcao = tabContent[index].dataset.anime;
+      tabContent[index].classList.add("ativo", direcao);
+    };
+    activeTab();
   });
 });
 
 // mostrando a resposta da pergunta do faq clicada
 
-const listFaq = document.querySelectorAll(".js-accordion dt");
+const listFaq = document.querySelectorAll('[data-anime="accordion"] dt');
 
 listFaq.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -28,7 +28,9 @@ listFaq.forEach((item) => {
 
 // animacao de scroll para item do menu selecionado
 
-const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+const linksInternos = document.querySelectorAll(
+  '[data-menu="anime"] a[href^="#"]'
+);
 
 linksInternos.forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -50,7 +52,7 @@ linksInternos.forEach((link) => {
 
 // animando ao scrollar da pagina
 
-const sections = document.querySelectorAll(".js-scroll");
+const sections = document.querySelectorAll('[data-anime="scroll"]');
 
 function scrollAnim() {
   sections.forEach((section) => {

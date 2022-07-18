@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="anime">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -22,9 +22,9 @@
       <li><a href="https://www.murilothom.com/" target="_blank">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="img/imagem1.jpg">
       </li>
@@ -44,8 +44,8 @@
         <img src="img/imagem6.jpg">
       </li>
     </ul>
-    <div class="animais-descricao js-tabcontent">
-      <section class="ativo">
+    <div class="animais-descricao" data-tab="content">
+      <section class="ativo show-right" data-anime="show-right">
         <h2>Raposa</h2>
         <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
           por um focinho comprido e uma cauda longa e peluda.</p>
@@ -54,15 +54,14 @@
           qual a raposa vermelha é a mais comum.</p>
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
       </section>
-
-      <section>
+      <section data-anime="show-right">
         <h2>Esquilo</h2>
         <p>Os esquilos pertencem a uma grande família de mamíferos roedores, de pequeno e médio porte, conhecida como Sciuridae. </p>
         <p> No Brasil, são também conhecidos como serelepe, caxinguelê, caxinxe, quatimirim, quatipuru, agutipuru ou acutipuru.</p>
         <p>Na Galiza e em algumas zonas de Portugal, também são conhecido por esquio.</p>
         <p>Os esquilos estão espalhados por quase todo o mundo, a maioria nas zonas de climas temperado ou tropical, mas também em algumas zonas de clima frio.</p>
       </section>
-      <section>
+      <section data-anime="show-down">
         <h2>Urso</h2>
         <p>Os Ursos (latim científico: Ursidae) constituem uma família de mamíferos plantígrados, geralmente de grande porte, contendo os ursos e os pandas.</p>
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
@@ -70,7 +69,7 @@
           qual a raposa vermelha é a mais comum.</p>
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
       </section>
-      <section>
+      <section data-anime="show-down">
         <h2>Lobo</h2>
         <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
           por um focinho comprido e uma cauda longa e peluda.</p>
@@ -78,14 +77,14 @@
         <p>A maioria dos ursos costumam preparar-se para hibernar durante o inverno, comendo grandes quantidades de comida antes de entrar em uma toca para o período de sono profundo.</p>
         <p>Os ursos existem em todos os continentes, em exceção na África, embora algumas fontes afirmem terem avistado o Urso nandi, mas sem comprovarem a sua existência.</p>
       </section>
-      <section>
+      <section data-anime="show-right">
         <h2>Macaco</h2>
         <p>Macaco é um termo de origem africana (provavelmente do banto makako) utilizado como designação comum a todas as espécies de símios ou primatas antropoides. </p>
         <p>É aplicada restritivamente no Brasil aos cebídeos (ou macacos do Novo Mundo) em geral. No sentido estrito, "macaco" refere-se às espécies de primatas pertencentes ao género Macaca.</p>
         <p>A designação mico se origina, segundo o Dicionário Aurélio, do caraíba (karib) continental. É bastante usada no Brasil, onde costuma aplicar-se às espécies do gênero Cebus, no Sul, e às espécies de pequeno porte, ou saguis, no Norte.</p>
         <p>O termo sagui se origina do tupi antigo sagûi e também designa os macacos calitriquídeos de pequeno porte.</p>
       </section>
-      <section>
+      <section data-anime="show-right">
         <h2>Leão</h2>
         <p>O leão [feminino: leoa] (nome científico: Panthera leo) é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. </p>
         <p> A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia. </p>
@@ -95,9 +94,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista js-accordion">
+    <dl class="faq-lista" data-anime="accordion">
       <dt>Qual a idade dos animais?</dt>
       <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
       <dt>Eles são fantásticos?</dt>
@@ -109,7 +108,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="./img/mapa.png">
