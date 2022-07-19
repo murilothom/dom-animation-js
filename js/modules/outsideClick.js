@@ -4,7 +4,9 @@ const outsideClick = (element, userEvents, callback) => {
 
   userEvents.forEach((userEvent) => {
     !element.hasAttribute(outside) &&
-      html.addEventListener(userEvent, handleOutsideClick);
+      setTimeout(() => {
+        html.addEventListener(userEvent, handleOutsideClick);
+      });
     element.setAttribute(outside, "");
   });
 
