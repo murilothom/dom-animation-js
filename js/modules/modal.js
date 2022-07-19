@@ -9,7 +9,7 @@ const modalTela = () => {
     e.preventDefault();
     modal.classList.add("ativo");
   });
-  botaoFechar.addEventListener("click", (e) => {
+  botaoFechar.addEventListener("click", () => {
     modal.classList.remove("ativo");
   });
   modal.addEventListener("click", (e) => {

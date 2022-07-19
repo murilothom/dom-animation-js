@@ -2,7 +2,7 @@ const tooltips = document.querySelectorAll("[data-tooltip]");
 
 const tooltip = () => {
   tooltips.forEach((item) => {
-    item.addEventListener("mouseover", (e) => {
+    item.addEventListener("mouseover", () => {
       const tooltipBox = document.createElement("div");
       const text = item.getAttribute("aria-label");
 
