@@ -12,9 +12,6 @@ const funcionamentoDias = () => {
 
   if (diaSemanaAberto && horarioAberto) {
     funcionamento.classList.add("aberto");
-    console.log("aberto");
-  } else {
-    console.log("fechado");
   }
 };
 
