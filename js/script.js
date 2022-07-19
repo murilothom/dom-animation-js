@@ -6,3 +6,5 @@ import modal from "./modules/modal.js";
 import tooltip from "./modules/tooltip.js";
 import dropDownMenu from "./modules/dropdown-menu.js";
 import menuMobile from "./modules/menu-mobile.js";
+import animaNumeros from "./modules/anima-numeros.js";
+import funcionamentoDias from "./modules/funcionamento-dias.js";
