@@ -9,3 +9,9 @@ import menuMobile from "./modules/menu-mobile.js";
 import animaNumeros from "./modules/anima-numeros.js";
 import funcionamentoDias from "./modules/funcionamento-dias.js";
 import priceBtc from "./modules/fetch-bitcoin.js";
+import { SlideNav } from "./modules/slide.js";
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+
+slide.addControl(".custom-controls");
